@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+ext {
+    SdkVersion = '27.1.1'
+}
+
+dependencies {
+    compileOnly "com.android.support:appcompat-v7:$SdkVersion"
+    compileOnly "com.android.support:support-v4:$SdkVersion"
+}

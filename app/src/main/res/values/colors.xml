@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#23CFDA</color>
+    <color name="colorPrimaryDark">#23CFDA</color>
+    <color name="colorAccent">#25E7D2</color>
+
+    <color name="darkTurquoise">#23CFDA</color>
+    <color name="azureishWhite">#D9F4F6</color>
+    <color name="aquamarine">#7BF0DF</color>
+    <color name="turquoise">#25E7D2</color>
+</resources>

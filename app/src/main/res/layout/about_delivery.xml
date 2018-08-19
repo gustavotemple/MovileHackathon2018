@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/meios"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azureishWhite"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/date"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/aquamarine"
+        android:text="Data de Entrega"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/aquamarine"
+        android:text="Continuar"
+        android:textColor="@android:color/white" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="102dp">
+
+        <RadioButton
+            android:id="@+id/option01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text="Entregar em casa" />
+
+        <RadioButton
+            android:id="@+id/option02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Retirar na loja" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="63dp"
+        android:text="Onde quer receber sua compra?"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/option01View"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="104dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/text"
+            android:layout_marginBottom="10dp"
+            android:text="Confirme o endereço de entrega"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/dynamicSpinner01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/address" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/option02View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/option01View"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/marketText"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/select"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/dynamicSpinner02"
+            android:layout_width="match_parent"
+            android:prompt="@string/select"
+            android:layout_height="wrap_content"
+            android:entries="@array/markets"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azureishWhite">
+
+    <ImageView
+        android:id="@+id/pinLocation"
+        android:layout_width="218dp"
+        android:layout_height="270dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/ic_person_pin_circle_black_24dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/contentCEP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="156dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="CEP: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:hint="#####-###"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:singleLine="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

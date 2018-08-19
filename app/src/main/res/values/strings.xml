@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SmarketApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="show_more">Mostrar mais</string>
+    <string name="hide">Esconder</string>
+    <string name="cart">Carrinho</string>
+
+    <string name="select">Selecione onde deseja retirar sua compra: </string>
+
+    <string-array name="markets">
+        <item>Mercadinho da Ana</item>
+        <item>Mercadinho Du Bom</item>
+        <item>Bar do Zezinhos</item>
+        <item>Mercearia Seu João</item>
+    </string-array>
+    <string-array name="address">
+        <item>Rua Jasmim, 660 - Primavera</item>
+        <item><link>Adicionar novo endereço</link></item>
+    </string-array>
+
+</resources>
